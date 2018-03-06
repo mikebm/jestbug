@@ -1,9 +1,13 @@
+import { TestClassDecorator, TestFunctionDecorator } from "./decorators";
+
+@TestClassDecorator()
 export class Component {
   /**
    * Does some stuff.
    * @param start
    * @param end
    */
+  @TestFunctionDecorator("/test")
   public executeSomeLogic(start: number, end: number) {
     let log = "Started";
     this.log(log);
