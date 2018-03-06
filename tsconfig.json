@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"moduleResolution": "node",
+		"inlineSourceMap": true,
+		"downlevelIteration": true,
+		"noUnusedLocals": true,
+		"experimentalDecorators": true,
+		"lib": [
+      "dom",
+      "es2015",
+      "es5",
+			"es6",
+			"es2017",
+			"es7"
+    ],
+		"types": [
+			"node",
+			"express",
+			"jest"
+		]
+	},
+	"include": [
+    "**/*.ts",
+    "*.ts"
+	]
+}
