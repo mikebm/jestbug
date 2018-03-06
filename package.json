@@ -26,19 +26,14 @@
 		],
 		"collectCoverageFrom": [
 			"*.js",
-			"*.ts",
-			"!**/*.json",
-			"!**/coverage/**",
-			"!**/node_modules/**",
-			"!**/vendor/**"
+			"*.ts"
 		],
 		"transform": {
 			"^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
 		},
 		"moduleFileExtensions": [
 			"ts",
-			"js",
-			"json"
+			"js"
 		],
 		"testMatch": [
 			"<rootDir>/**/__tests__/**/*.ts?(x)"
@@ -47,27 +42,14 @@
 		"resetModules": true,
 		"testResultsProcessor": "./node_modules/jest-junit-reporter",
 		"unmockedModulePathPatterns": [
-			"date-fns",
-			"axios",
-			"underscore",
-			"backbone",
-			"jquery",
-			"wrappy",
-			"depd",
-			"uuid",
-			"glob",
-			"node_modules/express",
-			"deep-extend",
-			"test/mock",
 			"<rootDir>/node_modules/ts-jest/.*"
+		],
+		"moduleDirectories": [
+			"<rootDir>",
+			"node_modules"
 		]
 	},
 	"dependencies": {
 		"ts-node": "^5.0.1"
-	},
-	"moduleDirectories": [
-		"<rootDir>",
-		"node_modules",
-		"src"
-	]
+	}
 }
